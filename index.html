@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#09111f"><title>DEVICE X PRO — Explore Technology</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+ <a class="brand" href="#"><span class="logo">X</span><span>DEVICE <b>X</b><small>PRO · DEVICE DISCOVERY</small></span></a>
+ <nav><a href="#categories">Categories</a><a href="#catalog">Catalog</a><a href="#about">About</a></nav>
+ <button id="languageBtn" class="lang-btn">العربية</button>
+</header>
+<main>
+<section class="hero">
+ <div class="hero-copy"><div class="eyebrow"><i></i> THE DEVICE ENCYCLOPEDIA</div>
+ <h1>Every device.<br><span>One place.</span></h1>
+ <p>Discover smartphones, laptops, tablets and more. Search a model and explore its key specifications.</p>
+ <a class="cta" href="#catalog">Explore the catalog <b>↘</b></a>
+ <div class="hero-metrics"><div><strong id="totalCount">0</strong><small>RECORDS LOADED</small></div><div><strong>5+</strong><small>DEVICE CATEGORIES</small></div><div><strong>PC + MOBILE</strong><small>RESPONSIVE</small></div></div>
+ </div>
+ <div class="hero-art">
+  <div class="device-glow"></div>
+  <div class="hero-laptop"><div class="laptop-screen"><div class="screen-ui"><span></span><span></span><span></span><b>DEVICE X</b><small>EXPLORE THE FUTURE</small></div></div><div class="laptop-base"></div></div>
+  <div class="hero-phone"><div class="phone-camera"></div><div class="phone-screen"><div class="phone-time">09:41</div><div class="phone-wall"></div><div class="phone-dock"><i></i><i></i><i></i><i></i></div></div></div>
+  <div class="float-chip chip-one">SMARTPHONES</div><div class="float-chip chip-two">LAPTOPS & MORE</div>
+ </div>
+</section>
+<section class="category-section" id="categories">
+ <div class="section-head"><div><div class="eyebrow">BROWSE BY TYPE</div><h2>What are you looking for?</h2></div><p>Choose a device category to narrow your search.</p></div>
+ <div class="category-grid">
+  <button class="category-card active" data-category="all"><span class="cat-icon">⌘</span><b>All devices</b><small>Explore everything</small></button>
+  <button class="category-card" data-category="phone"><span class="cat-icon">▯</span><b>Smartphones</b><small>iPhone, Samsung, Xiaomi…</small></button>
+  <button class="category-card" data-category="laptop"><span class="cat-icon">▱</span><b>Laptops</b><small>HP, Dell, Lenovo, Apple…</small></button>
+  <button class="category-card" data-category="tablet"><span class="cat-icon">▯</span><b>Tablets</b><small>iPad, Galaxy Tab…</small></button>
+  <button class="category-card" data-category="desktop"><span class="cat-icon">▣</span><b>Desktop PCs</b><small>Gaming & office computers</small></button>
+  <button class="category-card" data-category="watch"><span class="cat-icon">◷</span><b>Smartwatches</b><small>Wearable technology</small></button>
+ </div>
+</section>
+<section class="catalog" id="catalog">
+ <div class="section-head"><div><div class="eyebrow">DEVICE DATABASE</div><h2>Find your device</h2></div><div class="status" id="loadStatus"><i class="spinner"></i> Loading device records…</div></div>
+ <div class="search-panel">
+  <label class="searchbox"><span>⌕</span><input id="searchInput" type="search" placeholder="Search by model, brand, CPU, RAM, storage…" autocomplete="off"><button id="clearSearch" type="button">×</button></label>
+  <select id="brandFilter"><option value="all">All brands</option></select>
+  <select id="sortFilter"><option value="name">Sort: Name</option><option value="brand">Sort: Brand</option></select>
+ </div>
+ <div class="catalog-meta"><span id="resultCount">Preparing catalog…</span><span>Tap a device to view details</span></div>
+ <div class="device-grid" id="deviceGrid"><div class="loading-card">Preparing device catalog…</div></div>
+ <button id="loadMore" class="load-more" hidden>Load more devices</button>
+ <p class="data-note">Specifications are collected from public community datasets and may vary by model configuration or region. Always confirm important details with the manufacturer.</p>
+</section>
+<section class="about" id="about"><div><div class="eyebrow">ABOUT THIS PROJECT</div><h2>Technology,<br><span>made simple.</span></h2></div><p>DEVICE X PRO helps you discover different types of technology in one clean catalog. Search by name, brand or specification, then open a device card to see its available details.</p></section>
+</main>
+<footer><b>DEVICE X PRO</b><span>CREATED BY OTHMAN LAMMALLAH</span><span>© 2026</span></footer>
+<dialog id="deviceDialog"><button id="closeDialog" class="close-dialog">×</button><div id="dialogBody"></div></dialog>
+<script src="app.js"></script>
+</body></html>
